@@ -1,0 +1,9 @@
+Create bucket -> name --> acl enabled 
+uncheck all public access
+Create bucket
+
+Click on bucket --> upload project
+
+Click on bucket --> select all files --> actions --> Make public using acls
+
+Copy on the url

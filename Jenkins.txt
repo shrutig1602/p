@@ -1,0 +1,50 @@
+EC2 --> Create Security grp --> check all
+Add inbound rules 8080 AND 3000 to security grps
+connect instance
+update and upgrade
+
+sudo apt update && sudo apt install fontconfig openjdk-17-jre -y
+
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt-get update  
+
+sudo apt-get install jenkins -y
+
+Start the Jenkins service: sudo systemctl start jenkins
+
+Check the status of the Jenkins service: sudo systemctl status jenkins
+
+sudo su
+
+nano path_unlock_jenkins_page
+
+copy password
+
+paste it in unlock_jenkins_page
+
+create admin --> save and finish
+
+Ctrl+c on cmd , then follow these commands
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+
+sudo bash /tmp/nodesource_setup.sh
+
+sudo apt-get install -y nodejs
+
+copy githublink
+
+1) FreestyleProject  --> paste github link n all --> save --> build now
+
+2) Create Pipeline --> cd /var/lib/jenkins  --> ls --> cd workspace 
+
+   Inside steps ==> dir('path'){ sh 'npm install' sh 'node server' }
+	save --> build now
+	open url
+
+

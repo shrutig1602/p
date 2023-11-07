@@ -1,0 +1,9 @@
+EC2 --> Existing grp --> default
+create target grp
+sudo apt-get install apache2
+cd /var/www/html
+sudo rm index.html
+sudo nano index.html
+write code
+
+Create Load Balancer

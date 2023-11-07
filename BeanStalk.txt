@@ -1,0 +1,20 @@
+Create IAM user --> Select Roles --> AWS service --> EC2 
+
+allow beanstalk permissions && Codepipeline_full_access
+
+provide name --> create
+
+Create Beanstalk Application 
+Application name
+Platform : PHP
+Upload code --> local zip file
+
+Use existing role that we created
+
+enter project folder name in the document root of Platform software i.e /folder_name
+
+create
+
+upload and deploy --> select zip file --> deploy
+
+click on domain

@@ -1,0 +1,15 @@
+EC2 --> Auto Scaling grps
+Create a launch template --> OS : linux --> free tier services --> existing security grp --> default
+Add launch template 
+Choose availability zones
+Attach to existing load balancer
+
+Creat Target Grp
+
+select target grp
+
+Change Desired capacity  
+
+Track policy
+
+If got error --> edit network settings

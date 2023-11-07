@@ -1,0 +1,23 @@
+Server 1: 
+ssh ubuntu@ip_address
+cd  .ssh/
+ssh-keygen
+cat id_rsa.pub  --> copy 
+
+
+Server 2:
+cd .ssh/
+ls
+paste 
+
+
+Server 1: 
+cd ..
+ssh ubuntu@ip_address
+exit
+sudo apt get ansible
+ansible
+sudo mkdir ansible
+cd ansible
+sudo nano hosts --> paste 2nd server IP
+ansible -m ping all
